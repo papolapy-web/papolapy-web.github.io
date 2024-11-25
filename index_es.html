@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papolapy Language</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Liberation+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #a85;
+            font-family: 'Liberation Sans', sans-serif;
+            color: #050505;
+        }
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #dfd3ba;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+        }
+        .header img {
+            width: 45px;
+            height: 45px;
+            margin-right: 10px;
+        }
+        .header .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 45px;
+        }
+        .header .text h1 {
+            margin: 0;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+        .header .text h1 span {
+            color: red;
+        }
+        .header .text p {
+            margin: 0;
+            font-size: 1.1em;
+            color: #444;
+        }
+        .language-switch {
+            text-align: right;
+            margin-top: 20px;
+            margin-left: 25px;
+        }
+        .language-switch a {
+            text-decoration: none;
+            font-size: 1.2em;
+            color: #050505;
+            background-color: #dfd3ba;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-left: 10px;
+            transition: background-color 0.3s;
+        }
+        .language-switch a:hover {
+            background-color: #b8a98e;
+        }
+
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            align-items: stretch;
+            gap: 20px;
+        }
+
+
+        .rules {
+            background-color: #dfd3ba;
+            padding: 20px;
+            border-radius: 10px;
+            width: 65%; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: justify;
+            font-size: 1em;
+        }
+        .rules h2 {
+            font-size: 2em;
+            color: #050505;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .rules ul {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #444;
+            margin-left: 20px;
+        }
+        .rules li {
+            margin-bottom: 10px;
+        }
+
+        .philosophy {
+            background-color: rgba(223, 211, 186, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            width: 30%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            font-size: 1em;
+            line-height: 1.6;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .philosophy h2 {
+            font-size: 1.8em;
+            color: #050505;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .philosophy p {
+            font-size: 0.8em;
+            line-height: 1.6;
+            color: #444;
+            text-align: justify;
+        }
+        .facts {
+            margin-top: 10px;
+            padding-left: 20px;
+            list-style: disc;
+            color: #444;
+            font-size: 0.7em;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .facts li {
+            margin-bottom: 8px;
+        }
+
+
+        .dictionary {
+            margin-top: 20px;
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .dictionary th, .dictionary td {
+            padding: 12px;
+            border: 1px solid #050505;
+            text-align: center;
+            background-color: #fff;
+        }
+        .dictionary th {
+            background-color: #dfd3ba;
+            font-weight: bold;
+        }
+        .dictionary td {
+            background-color: #f9f9f9;
+        }
+
+        .language-switch a:hover {
+            background-color: #b8a98e;
+            transform: scale(1.1);
+        }
+        .footer {
+            background-color: #dfd3ba;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9em;
+            color: #444;
+            border-top: 2px solid #a85;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.png" alt="Logo">
+            <div class="text">
+                <h1><span>P</span>apolapy Language</h1>
+                <p>Un mini-idioma para expresar emociones</p>
+            </div>
+        </div>
+        <div class="language-switch">
+                <a href="index.html">English</a> / 
+                <a href="index_es.html">Espanol</a> / 
+                <a href="index_fr.html">Francais</a> / 
+                <a href="index_ru.html">Русский</a>
+        </div>
+
+
+        <div class="main-content">
+            <div class="rules">
+                <h2>&iquest;Quieres aprender a expresar tus emociones de manera sencilla?</h2>
+                <p>No hay nada mas facil, solo recuerda algunas reglas sencillas:</p>
+            <ul>
+                <li>Para expresar tus emociones y sentimientos, usa los simbolos del lenguaje Papolapy en el texto, y las palabras correspondientes en el habla. Esto hara que tu mensaje sea mas expresivo y emocionalmente rico.</li>
+                <li>Lo mejor es colocar el simbolo antes de la frase emocional, pero no es necesario. Puedes decidir por ti mismo donde encaja mejor: no hay reglas estrictas.</li>
+                <li>Para expresar multiples emociones a la vez, simplemente coloca los simbolos con un espacio entre ellos, y pronuncia las palabras con una pausa. Esto ayudara a transmitir la profundidad de tus sentimientos de manera clara.</li>
+            </ul>
+
+                <table class="dictionary">
+                    <thead>
+                        <tr>
+                            <th>Simbolo</th>
+                            <th>Pronunciacion</th>
+                            <th>Significado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>>p<</td>
+                            <td>papo</td>
+                            <td>Exclamacion, llamada de atencion</td>
+                        </tr>
+                        <tr>
+                            <td>>o<</td>
+                            <td>ohopo</td>
+                            <td>Aprobacion, acuerdo</td>
+                        </tr>
+                        <tr>
+                            <td>>i<</td>
+                            <td>imapo</td>
+                            <td>Negacion, desacuerdo</td>
+                        </tr>
+                        <tr>
+                            <td>>y<</td>
+                            <td>yono</td>
+                            <td>Sorpresa, miedo</td>
+                        </tr>
+                        <tr>
+                            <td>>f<</td>
+                            <td>fodo</td>
+                            <td>Descontento extremo, agresion</td>
+                        </tr>
+                        <tr>
+                            <td>>l<</td>
+                            <td>lapy</td>
+                            <td>Felicidad, ternura, interes en el tema</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="philosophy">
+                <h3>Filosofia de Papolapy</h3>
+                <p>Cada conversacion, ya sea en linea o en la vida real, no solo es un intercambio de informacion, sino tambien un intento de transmitir nuestras emociones. En Internet, los emoticonos nos ayudan, pero hay tantos que es facil confundirse, y ademas se ven de manera diferente en cada plataforma. En la vida real, dependemos de las expresiones faciales, pero tampoco siempre son suficientes: no todas las emociones se pueden expresar con una sola mirada. &iquest;Por que no simplificar la tarea? Papolapy Language es un mini-idioma que hace que expresar emociones sea facil, comprensible y universal. Olvidate de las reglas complejas: simplemente agrega simbolos o palabras, &#161;y tus emociones brillaran con nuevos colores! Papolapy es tu llave para el corazon de tu interlocutor.</p>
+                <h3>Hechos interesantes</h3>
+                <ul class="facts">
+                        <li>El lenguaje Papolapy consta de solo 6 palabras y simbolos basicos, lo que lo convierte en uno de los lenguajes mas simples del mundo y tambien en el mas facil de recordar.</li>
+                        <li>El lenguaje Papolapy fue inventado en 2012 y ahora lleva 12 anos existiendo. Su popularidad ha variado, pero se ha mencionado en varias comunidades en linea, redes sociales e incluso en algunas historias. El numero aproximado de hablantes de este lenguaje hace tiempo supero los 50,000.</li>
+                        <li>La idea del lenguaje nacio del deseo de unir a las personas, independientemente de su edad, nacionalidad o habitos.</li>
+                        <li>De hecho, el lenguaje Papolapy es un metalenguaje que complementa el habla o el texto ordinarios, haciendo que las emociones sean mas comprensibles. Sin embargo, esto no le impide ser llamado "en broma" un lenguaje completo.</li>
+                </ul>
+            </div>
+        </div>
+            <div class="footer">
+                <p>© 2012–2024 Papolapy Community. Licensed under the license <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.es" target="_blank">CC BY-NC-SA 4.0</a>.</p>
+                <p>Este sitio no utiliza cookies. La administracion del sitio no recopila, procesa ni controla sus datos personales. Todos los aspectos tecnicos del funcionamiento del sitio estan limitados a su contenido, y la administracion no utiliza ni tiene acceso a herramientas para recopilar datos de los usuarios.
+</p>
+            </div>
+    </div>
+</body>
+</html>

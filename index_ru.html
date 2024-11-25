@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papolapy Language</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Liberation+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #a85;
+            font-family: 'Liberation Sans', sans-serif;
+            color: #050505;
+        }
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #dfd3ba;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+        }
+        .header img {
+            width: 45px;
+            height: 45px;
+            margin-right: 10px;
+        }
+        .header .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 45px;
+        }
+        .header .text h1 {
+            margin: 0;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+        .header .text h1 span {
+            color: red;
+        }
+        .header .text p {
+            margin: 0;
+            font-size: 1.1em;
+            color: #444;
+        }
+        .language-switch {
+            text-align: right;
+            margin-top: 20px;
+            margin-left: 25px;
+        }
+        .language-switch a {
+            text-decoration: none;
+            font-size: 1.2em;
+            color: #050505;
+            background-color: #dfd3ba;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-left: 10px;
+            transition: background-color 0.3s;
+        }
+        .language-switch a:hover {
+            background-color: #b8a98e;
+        }
+
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            align-items: stretch;
+            gap: 20px;
+        }
+
+
+        .rules {
+            background-color: #dfd3ba;
+            padding: 20px;
+            border-radius: 10px;
+            width: 65%; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: justify;
+            font-size: 1em;
+        }
+        .rules h2 {
+            font-size: 2em;
+            color: #050505;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .rules ul {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #444;
+            margin-left: 20px;
+        }
+        .rules li {
+            margin-bottom: 10px;
+        }
+
+        .philosophy {
+            background-color: rgba(223, 211, 186, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            width: 30%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            font-size: 1em;
+            line-height: 1.6;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .philosophy h2 {
+            font-size: 1.8em;
+            color: #050505;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .philosophy p {
+            font-size: 0.8em;
+            line-height: 1.6;
+            color: #444;
+            text-align: justify;
+        }
+        .facts {
+            margin-top: 10px;
+            padding-left: 20px;
+            list-style: disc;
+            color: #444;
+            font-size: 0.7em;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .facts li {
+            margin-bottom: 8px;
+        }
+
+
+        .dictionary {
+            margin-top: 20px;
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .dictionary th, .dictionary td {
+            padding: 12px;
+            border: 1px solid #050505;
+            text-align: center;
+            background-color: #fff;
+        }
+        .dictionary th {
+            background-color: #dfd3ba;
+            font-weight: bold;
+        }
+        .dictionary td {
+            background-color: #f9f9f9;
+        }
+
+        .language-switch a:hover {
+            background-color: #b8a98e;
+            transform: scale(1.1);
+        }
+        .footer {
+            background-color: #dfd3ba;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9em;
+            color: #444;
+            border-top: 2px solid #a85;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.png" alt="Logo">
+            <div class="text">
+                <h1><span>P</span>apolapy Language</h1>
+                <p>Мини-язык выражения эмоций</p>
+            </div>
+        </div>
+        <div class="language-switch">
+                <a href="index.html">English</a> / 
+                <a href="index_es.html">Espanol</a> / 
+                <a href="index_fr.html">Francais</a> / 
+                <a href="index_ru.html">Русский</a>
+        </div>
+
+        <div class="main-content">
+            <div class="rules">
+                <h2>Хотите научиться выражать свои эмоции просто?</h2>
+                <p>Нет ничего проще, просто запомните несколько несложных правил:</p>
+                <ul>
+                    <li>Чтобы выразить свои эмоции и чувства, используйте в тексте символы языка Papolapy, а в речи — соответствующие слова. Это сделает ваше сообщение более выразительным и эмоционально насыщенным.</li>
+                    <li>Лучше всего указывать обозначение перед эмоциональной фразой, но это необязательно. Вы можете сами решить, где оно будет уместнее — строгих правил не существует.</li>
+                    <li>Для передачи нескольких эмоций одновременно просто разместите символы через пробел, а слова произнесите с паузой. Это поможет передать всю глубину ваших чувств максимально ясно.</li>
+                </ul>
+
+                <table class="dictionary">
+                    <thead>
+                        <tr>
+                            <th>Символ</th>
+                            <th>Произношение</th>
+                            <th>Значение</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>>p<</td>
+                            <td>papo</td>
+                            <td>Восклицание, обращение внимания</td>
+                        </tr>
+                        <tr>
+                            <td>>o<</td>
+                            <td>ohopo</td>
+                            <td>Согласие, одобрение</td>
+                        </tr>
+                        <tr>
+                            <td>>i<</td>
+                            <td>imapo</td>
+                            <td>Отрицание, несогласие</td>
+                        </tr>
+                        <tr>
+                            <td>>y<</td>
+                            <td>yono</td>
+                            <td>Удивление, испуг</td>
+                        </tr>
+                        <tr>
+                            <td>>f<</td>
+                            <td>fodo</td>
+                            <td>Крайнее недовольство, агрессия</td>
+                        </tr>
+                        <tr>
+                            <td>>l<</td>
+                            <td>lapy</td>
+                            <td>Радость, нежность, заинтересованность в теме</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="philosophy">
+                <h3>Философия Papolapy</h3>
+                <p>Каждый разговор, в сети или в реальной жизни, — это не только обмен информацией, но и попытка передать свои эмоции. В интернете нас выручают смайлики, но их столько, что легко запутаться, а ещё они выглядят по-разному на каждой платформе. В жизни мы полагаемся на мимику, но она тоже не всегда спасает: не каждое чувство можно выразить одним взглядом. Так почему бы не упростить задачу? Papolapy Language — это мини-язык, который делает выражение эмоций лёгким, понятным и универсальным. Забудьте про сложные правила: просто добавляйте символы или слова, и ваши эмоции заиграют новыми красками! Papolapy — ваш ключ к сердцу собеседника.</p>
+                <h3>Интересные факты</h3>
+                <ul class="facts">
+                        <li>Язык Papolapy содержит всего 6 основных слов и символов, что делает его одиним из самых простых языков в мире и, к тому же, самым легко запоминаемым.</li>
+                        <li>Язык Papolapy был придуман в 2012 году и существует вот уже 12 лет. Популярность языка была разной, но он ранее упоминался в различных интернет-сообществах, соцсетях и даже в нескольких рассказах, а примерно общее количество носителей этого языка давно перевалило за 50 000.</li>
+                        <li>Идея языка родилась из желания объединить людей, независимо от их возраста, национальности или привычек.</li>
+                        <li>На самом деле язык Papolapy является метаязыком, дополняющим обычную речь или текст и делающим эмоции более понятными. Однако это не мешает ему «в шутку» называться полноценным языком.</li>
+                </ul>
+            </div>
+        </div>
+            <div class="footer">
+                <p>© 2012–2024 Papolapy Community. Лицензируется по лицензии <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.ru" target="_blank">CC BY-NC-SA 4.0</a>.</p>
+                <p>Этот сайт не использует куки-файлы. Администрация сайта не собирает, не обрабатывает и не контролирует ваши персональные данные. Все технические аспекты работы сайта ограничиваются его содержанием, и администрация не использует и не имеет доступа к каким-либо инструментам для сбора данных пользователей.</p>
+            </div>
+    </div>
+</body>
+</html>

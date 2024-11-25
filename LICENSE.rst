@@ -1,0 +1,1 @@
+© 2012–2024 Papolapy Community. Licensed under the license CC BY-NC-SA 4.0.
